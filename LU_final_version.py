@@ -75,11 +75,11 @@ def generate_token(balance):
 
     # Testing loop to generate 5 tokens
     while play_again != "x":
-        rounds_played += 1 # keep track of rounds
+        rounds_played += 1  # keep track of rounds
         print()
         print(formatter(".", f"Round {rounds_played}"))
         print()
-        number = random.randint(1,100)
+        number = random.randint(1, 100)
 
         # adjust balance
         # If the random number is between 1 and 5
@@ -121,7 +121,7 @@ def generate_token(balance):
             print()
             play_again = input("Do you want to play another round\n<enter> to play again or 'X' to exit").lower()
     print()
-    return(balance)
+    return balance
 
 
 # function to format text output
