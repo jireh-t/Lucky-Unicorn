@@ -1,5 +1,4 @@
-"""LU base component - based on 00_LU_base_v2
-Adding instructions to instructions, and further text decoration
+"""LU final base component
 """
 
 import random
@@ -33,14 +32,17 @@ def instructions():
     print()
     print("Choose a starting amount to play with, must be between $1 and $10")
     print()
-    print("Then press <enter> to play. You will get a random token which will be a horse, donkey, zebra, or unicorn")
+    print("Then press <enter> to play. You will get a random token which will "
+          "be a horse, donkey, zebra, or unicorn")
     print()
-    print("Each round costs $1 to play, but depending on your prize, you could win some money back. These are the payout amounts:\n"
+    print("Each round costs $1 to play, but depending on your prize, you could"
+          " win some money back. These are the payout amounts:\n"
           "Unicorn: +$5 (balance increases by $4)\n"
           "Horse: -$0.50\n"
           "Zebra: -$0.50\n"
           "Donkey: -$1\n")
-    print("See if you can avoid donkeys, get the unicorns, and finish with more money than you started with!")
+    print("See if you can avoid donkeys, get the unicorns, and finish with "
+          "more money than you started with!")
 
     print("*" * 50)
     print()
@@ -119,7 +121,8 @@ def generate_token(balance):
             play_again = "x"
         else:
             print()
-            play_again = input("Do you want to play another round\n<enter> to play again or 'X' to exit").lower()
+            play_again = input("Do you want to play another round\n<enter> to "
+                               "play again or 'X' to exit").lower()
     print()
     return balance
 
